@@ -52,7 +52,7 @@ int main()
 	HANDLE phandle = OpenProcess(PROCESS_VM_READ, 0, pid);
 	cout << pid << endl;
 
-	DWORD base_addr = dwGetModuleBaseAddress(pid, L"DBKO v6.0.exe");
+	DWORD base_addr = dwGetModuleBaseAddress(pid, L"dbko v6.1.exe");
 	DWORD exp_addr = base_addr + 0x235F04;	
 	DWORD mana_addr = base_addr + 0x235EF0;
 
